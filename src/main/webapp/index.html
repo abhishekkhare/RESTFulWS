@@ -1,0 +1,52 @@
+<html>
+<title>Abhi's Restful Project</title>
+<body>
+	<h1>Welcome</h1>
+	<br>
+	<a href="http://localhost:9080/RESTFullWS/rest/hello/Abhi">First
+		Example</a>
+	<br>
+	<a href="http://localhost:9080/RESTFullWS/rest/v1/status">No Param
+		Get Request, with Class level path specifier with HTML Response</a>
+	<br>
+	<a href="http://localhost:9080/RESTFullWS/rest/v1/status/version">No
+		Param Get Request, with Method level path specifier with HTML Response</a>
+	<br>
+	<a href="http://localhost:9080/RESTFullWS/rest/v1/status/database">No
+		Param Get Request, with Method level path specifier with JSON Response</a>
+	<br>
+	<br>
+	<h3>Path Expressions</h3>
+	<br>
+
+	<h5>Sample URL and XML for POST,PUT and GET</h5>
+	<ul>
+		<li><b>POST::</b>http://localhost:9080/RESTFullWS/rest/CustomerResourcePathParam</li>
+		<li><b>PUT::</b>http://localhost:9080/RESTFullWS/rest/CustomerResourcePathParam/1</li>
+		<li><b>GET::</b>http://localhost:9080/RESTFullWS/rest/CustomerResourcePathParam/1</li>
+		<li><b>GET::</b>http://localhost:9080/RESTFullWS/rest/CustomerResourcePathParam/1/regexp</li>
+		<li><b>GET::</b>http://localhost:9080/RESTFullWS/rest/CustomerResourcePathParam/Abhishek-Khare</li>
+		<li><b>GET::</b>http://localhost:9080/RESTFullWS/rest/CustomerResourcePathParam/Abhishek-Khare/regexp</li>
+		<li><b>GET::</b>http://localhost:9080/RESTFullWS/rest/CustomerResourcePathParam/Abhi1-Khare2/regexp</li>
+		<li><b>GET::</b>http://localhost:9080/RESTFullWS/rest/CustomerResourcePathParam/Abhi1-Khare2</li>
+	</ul>
+	<textarea readonly="readonly" rows="4" cols="50">	
+		<customer>
+		<first-name>Abhishek</first-name> <last-name>Khare</last-name>
+		<street>ABC Drive</street> <city>Sunny</city> <state>CA</state> <zip>565</zip>
+		<country>USA</country></customer>
+	</textarea>
+	<textarea readonly="readonly" rows="4" cols="50">
+		<customer> <first-name>Roopali</first-name> <last-name>Raizada</last-name>
+		<street>ABC Drive</street> <city>Sunny</city> <state>CA</state> <zip>565</zip>
+		<country>USA</country></customer>
+	</textarea>
+	<textarea readonly="readonly" rows="4" cols="50">
+		<customer> <first-name>Abhi1</first-name> <last-name>Khare2</last-name>
+		<street>ABC Drive</street> <city>Sunny</city> <state>CA</state> <zip>565</zip>
+		<country>USA</country></customer>
+	</textarea>
+
+
+</body>
+</html>
