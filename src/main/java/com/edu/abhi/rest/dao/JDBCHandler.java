@@ -7,6 +7,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import com.edu.abhi.rest.domain.Customer;
+import com.edu.abhi.rest.domain.Product;
 
 /**
  * 
@@ -16,6 +17,7 @@ import com.edu.abhi.rest.domain.Customer;
 public class JDBCHandler {
 	private static Map<Integer, String> teamMap = new HashMap<Integer, String>();
 	private static Map<Integer, Customer> customerDB = new ConcurrentHashMap<Integer, Customer>();
+	private static Map<Integer, Product> productDB = new ConcurrentHashMap<Integer, Product>();
 	private static AtomicInteger idCounter = new AtomicInteger();
 
 	// Populate the DB on load of class so we have some data to play with.
@@ -106,5 +108,13 @@ public class JDBCHandler {
 		}
 		System.out.println("Not Found:" + firstName + " - " + lastName);
 		return null;
+	}
+
+	public static Map<Integer, Product> getProductDB() {
+		return productDB;
+	}
+
+	public static void setProductDB(Map<Integer, Product> productDB) {
+		JDBCHandler.productDB = productDB;
 	}
 }
