@@ -34,7 +34,7 @@ public class CustomerResourceFormHeaderCookieParm {
 	}
 
 	/**
-	 * http://localhost:8080/RESTFullWS/rest/CustomerResourceFormHeaderCookieParm
+	 * http://localhost:8080/RESTFulWS/rest/CustomerResourceFormHeaderCookieParm
 	 * 
 	 * @param first
 	 * @param last
@@ -57,7 +57,7 @@ public class CustomerResourceFormHeaderCookieParm {
 	}
 
 	/**
-	 * http://localhost:8080/RESTFullWS/rest/CustomerResourceFormHeaderCookieParm/1
+	 * http://localhost:8080/RESTFulWS/rest/CustomerResourceFormHeaderCookieParm/1
 	 * 
 	 * 
 	 * @param id
@@ -81,6 +81,29 @@ public class CustomerResourceFormHeaderCookieParm {
 		return Response.ok(output).cookie(new NewCookie("last-visit", lastVisit)).build();
 	}
 
+	/**
+	 * http://localhost:8080/RESTFulWS/rest/CustomerResourceFormHeaderCookieParm/1
+	 * Header Input -  AppName - AbhiTest
+	 * @param id
+	 * @param AppName
+	 * @param date
+	 * @return
+	 */
+	@POST
+	@Path("{id}")
+	@Produces("text/plain")
+	public Response getCustomerHeaderParam(@PathParam("id") int id, @HeaderParam("AppName") String AppName,
+			@CookieParam("last-visit") String date) {
+		final Customer customer = JDBCHandler.getCustomerDB().get(id);
+		if (customer == null) {
+			throw new WebApplicationException(Response.Status.NOT_FOUND);
+		}
+		String output = "Application-Name: " + AppName + "\r\n";
+		output += "Last visit: " + date + "\r\n\r\n";
+		output += "Customer: " + customer.getFirstName() + " " + customer.getLastName();
+		String lastVisit = DateFormat.getDateTimeInstance(DateFormat.SHORT, DateFormat.LONG).format(new Date());
+		return Response.ok(output).cookie(new NewCookie("last-visit", lastVisit)).build();
+	}
 	@GET
 	@Produces(MediaType.TEXT_HTML)
 	public String testServer() {

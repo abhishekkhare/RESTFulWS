@@ -26,7 +26,7 @@ public class CustomerResourceConsume1 {
 	}
 
 	/**
-	 * URL - http://localhost:8080/RESTFullWS/rest/CustomerResourceConsume1
+	 * URL - http://localhost:8080/RESTFulWS/rest/CustomerResourceConsume1
 	 * 
 	 * XML - <?xml version="1.0" encoding="UTF-8" standalone="yes"?><customer><city>Sunny</city><country>USA</country><firstName>Abhishek</firstName><lastName>Khare</lastName><state>CA</state><street>ABC Drive</street><zip>02115</zip></customer>
 	 * 
@@ -46,7 +46,7 @@ public class CustomerResourceConsume1 {
 	}
 
 	/**
-	 * URL - http://localhost:8080/RESTFullWS/rest/CustomerResourceConsume1/1
+	 * URL - http://localhost:8080/RESTFulWS/rest/CustomerResourceConsume1/1
 	 * 
 	 * @param id
 	 * @return
@@ -63,7 +63,7 @@ public class CustomerResourceConsume1 {
 	}
 
 	/**
-	 * URL - http://localhost:8080/RESTFullWS/rest/CustomerResourceConsume1/1
+	 * URL - http://localhost:8080/RESTFulWS/rest/CustomerResourceConsume1/1
 	 * 
 	 * The input XML will automatically be converted into the Customer Object
 	 * @param id

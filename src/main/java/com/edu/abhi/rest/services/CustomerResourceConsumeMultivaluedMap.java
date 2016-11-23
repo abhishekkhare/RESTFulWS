@@ -9,11 +9,12 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.MultivaluedHashMap;
 import javax.ws.rs.core.MultivaluedMap;
 
 import com.edu.abhi.rest.dao.JDBCHandler;
 import com.edu.abhi.rest.domain.Customer;
-import com.sun.jersey.core.util.MultivaluedMapImpl;
+
 
 /**
  * 
@@ -36,7 +37,7 @@ public class CustomerResourceConsumeMultivaluedMap {
 	@Produces("application/x-www-form-urlencoded")
 	public MultivaluedMap<String,String> post(MultivaluedMap<String, String> form) {
 		Customer cust = new Customer();
-		MultivaluedMap<String,String> responseForm = new MultivaluedMapImpl();
+		MultivaluedMap<String,String> responseForm = new MultivaluedHashMap<String,String>();
 			try{
 				cust.setId(JDBCHandler.getIdCounter().incrementAndGet());
 				cust.setFirstName(form.get("firstname").get(0));

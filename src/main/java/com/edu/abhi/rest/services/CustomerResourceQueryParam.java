@@ -33,10 +33,10 @@ public class CustomerResourceQueryParam {
 	
 	/**
 	 * In this case @DefaultValue value of 2 will be used for size
-	 * URL - http://localhost:8080/RESTFullWS/rest/CustomerResourceQueryParam?start=1
+	 * URL - http://localhost:8080/RESTFulWS/rest/CustomerResourceQueryParam?start=1
 	 * 
 	 * In this case both start and size are provided as query parameter.
-	 * URL - http://localhost:8080/RESTFullWS/rest/CustomerResourceQueryParam?start=1&size=4
+	 * URL - http://localhost:8080/RESTFulWS/rest/CustomerResourceQueryParam?start=1&size=4
 	 * 
 	 * @param start
 	 * @param size
@@ -65,10 +65,10 @@ public class CustomerResourceQueryParam {
 
 	/**
 	 * In this case @DefaultValue value of 2 will be used for size
-	 * URL - http://localhost:8080/RESTFullWS/rest/CustomerResourceQueryParam/uriinfo?start=1
+	 * URL - http://localhost:8080/RESTFulWS/rest/CustomerResourceQueryParam/uriinfo?start=1
 	 * 
 	 * In this case both start and size are provided as query parameter.
-	 * URL - http://localhost:8080/RESTFullWS/rest/CustomerResourceQueryParam/uriinfo?start=1&size=4
+	 * URL - http://localhost:8080/RESTFulWS/rest/CustomerResourceQueryParam/uriinfo?start=1&size=4
 	 * 
 	 * @param info
 	 * @return

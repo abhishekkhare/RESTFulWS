@@ -25,9 +25,9 @@ public class CarResourceMatrixAndPathParam
 
    /**
     * 
-    * URL - http://localhost:8080/RESTFullWS/rest/CarResourceMatrixAndPathParam/matrix/nissan/altima/2005;color=grey
-    * URL - http://localhost:8080/RESTFullWS/rest/CarResourceMatrixAndPathParam/matrix/honda/accord/2012;color=grey
-    * URL - http://localhost:8080/RESTFullWS/rest/CarResourceMatrixAndPathParam/matrix/infinity/qx60/2017;color=black
+    * URL - http://localhost:8080/RESTFulWS/rest/CarResourceMatrixAndPathParam/matrix/nissan/altima/2005;color=grey
+    * URL - http://localhost:8080/RESTFulWS/rest/CarResourceMatrixAndPathParam/matrix/honda/accord/2012;color=grey
+    * URL - http://localhost:8080/RESTFulWS/rest/CarResourceMatrixAndPathParam/matrix/infinity/qx60/2017;color=black
     * 
     * @param make
     * @param car
@@ -48,9 +48,9 @@ public class CarResourceMatrixAndPathParam
    
    /**
     * 
-    * URL - http://localhost:8080/RESTFullWS/rest/CarResourceMatrixAndPathParam/matrix1/nissan/altima/2005;color=grey
-    * URL - http://localhost:8080/RESTFullWS/rest/CarResourceMatrixAndPathParam/matrix1/honda/accord/2012;color=grey
-    * URL - http://localhost:8080/RESTFullWS/rest/CarResourceMatrixAndPathParam/matrix1/infinity/qx60/2017;color=black
+    * URL - http://localhost:8080/RESTFulWS/rest/CarResourceMatrixAndPathParam/matrix1/nissan/altima/2005;color=grey
+    * URL - http://localhost:8080/RESTFulWS/rest/CarResourceMatrixAndPathParam/matrix1/honda/accord/2012;color=grey
+    * URL - http://localhost:8080/RESTFulWS/rest/CarResourceMatrixAndPathParam/matrix1/infinity/qx60/2017;color=black
     * 
     * Here we see that the MatrixParam has to be the last thing in the URL.
     * 
@@ -74,9 +74,9 @@ public class CarResourceMatrixAndPathParam
 
    /**
     * 
-    * URL - http://localhost:8080/RESTFullWS/rest/CarResourceMatrixAndPathParam/segment/nissan/altima;color=grey/2005
-    * URL - http://localhost:8080/RESTFullWS/rest/CarResourceMatrixAndPathParam/segment/honda/accord;color=grey/2012
-    * URL - http://localhost:8080/RESTFullWS/rest/CarResourceMatrixAndPathParam/segment/infinity/qx60;color=black/2017
+    * URL - http://localhost:8080/RESTFulWS/rest/CarResourceMatrixAndPathParam/segment/nissan/altima;color=grey/2005
+    * URL - http://localhost:8080/RESTFulWS/rest/CarResourceMatrixAndPathParam/segment/honda/accord;color=grey/2012
+    * URL - http://localhost:8080/RESTFulWS/rest/CarResourceMatrixAndPathParam/segment/infinity/qx60;color=black/2017
     * 
     * @param make
     * @param car
@@ -97,9 +97,9 @@ public class CarResourceMatrixAndPathParam
    
 
    /**
-    * URL - http://localhost:8080/RESTFullWS/rest/CarResourceMatrixAndPathParam/segments/nissan/SE/2D/altima/year/2005
-    * URL - http://localhost:8080/RESTFullWS/rest/CarResourceMatrixAndPathParam/segments/honda/VE/6C/accord/year/2012
-    * URL - http://localhost:8080/RESTFullWS/rest/CarResourceMatrixAndPathParam/segments/infinity/LE/qx60/year/2017
+    * URL - http://localhost:8080/RESTFulWS/rest/CarResourceMatrixAndPathParam/segments/nissan/SE/2D/altima/year/2005
+    * URL - http://localhost:8080/RESTFulWS/rest/CarResourceMatrixAndPathParam/segments/honda/VE/6C/accord/year/2012
+    * URL - http://localhost:8080/RESTFulWS/rest/CarResourceMatrixAndPathParam/segments/infinity/LE/qx60/year/2017
     * 
     * @param make
     * @param car
@@ -122,9 +122,9 @@ public class CarResourceMatrixAndPathParam
    }
 
    /**
-    * URL - http://localhost:8080/RESTFullWS/rest/CarResourceMatrixAndPathParam/uriinfo/nissan/altima;color=grey/2005
-    * URL - http://localhost:8080/RESTFullWS/rest/CarResourceMatrixAndPathParam/uriinfo/honda/accord;color=grey/2012
-    * URL - http://localhost:8080/RESTFullWS/rest/CarResourceMatrixAndPathParam/uriinfo/infinity/qx60;color=black/2017
+    * URL - http://localhost:8080/RESTFulWS/rest/CarResourceMatrixAndPathParam/uriinfo/nissan/altima;color=grey/2005
+    * URL - http://localhost:8080/RESTFulWS/rest/CarResourceMatrixAndPathParam/uriinfo/honda/accord;color=grey/2012
+    * URL - http://localhost:8080/RESTFulWS/rest/CarResourceMatrixAndPathParam/uriinfo/infinity/qx60;color=black/2017
     * 
     * @param info
     * @return

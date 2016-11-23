@@ -47,7 +47,7 @@ public class CustomerResourcePathParam {
 	 * <last-name>Khare</last-name><street>ABC Drive</street><city>Sunny</city>
 	 * <state>CA</state><zip>565</zip><country>USA</country></customer>
 	 * 
-	 * URl - http://localhost:8080/RESTFullWS/rest/CustomerResourcePathParam
+	 * URl - http://localhost:8080/RESTFulWS/rest/CustomerResourcePathParam
 	 * 
 	 * Type - application/XML
 	 * 
@@ -67,7 +67,7 @@ public class CustomerResourcePathParam {
 	}
 
 	/**
-	 * URL - http://localhost:8080/RESTFullWS/rest/CustomerResourcePathParam/1
+	 * URL - http://localhost:8080/RESTFulWS/rest/CustomerResourcePathParam/1
 	 * 
 	 * @param id
 	 * @return
@@ -93,7 +93,7 @@ public class CustomerResourcePathParam {
 	}
 
 	/**
-	 * URL - http://localhost:8080/RESTFullWS/rest/CustomerResourcePathParam/1/regexp
+	 * URL - http://localhost:8080/RESTFulWS/rest/CustomerResourcePathParam/1/regexp
 	 * 
 	 * Note:
 	 * 
@@ -128,7 +128,7 @@ public class CustomerResourcePathParam {
 	}
 
 	/**
-	 * URL - http://localhost:8080/RESTFullWS/rest/CustomerResourcePathParam/Abhishek-Khare
+	 * URL - http://localhost:8080/RESTFulWS/rest/CustomerResourcePathParam/Abhishek-Khare
 	 * 
 	 * Note: this is another GET request, but since the path params and the
 	 * number of params are different, rest will be able to identify it.
@@ -154,7 +154,7 @@ public class CustomerResourcePathParam {
 
 	/**
 	 * URL -
-	 * http://localhost:8080/RESTFullWS/rest/CustomerResourcePathParam/Abhishek-Khare/regexp
+	 * http://localhost:8080/RESTFulWS/rest/CustomerResourcePathParam/Abhishek-Khare/regexp
 	 * 
 	 * Note:
 	 * 
@@ -169,10 +169,10 @@ public class CustomerResourcePathParam {
 	 * 
 	 * 3 - defines a way to specify the possible path values using regular
 	 * expressions, so a url like this
-	 * http://localhost:8080/RESTFullWS/rest/CustomerResourcePathParam/Abhi1-Khare2/regexp will
+	 * http://localhost:8080/RESTFulWS/rest/CustomerResourcePathParam/Abhi1-Khare2/regexp will
 	 * not work, you will get HTTP Status 404 - Not Found. However this will
 	 * work because of the other method -
-	 * http://localhost:8080/RESTFullWS/rest/CustomerResourcePathParam/Abhi1-Khare2
+	 * http://localhost:8080/RESTFulWS/rest/CustomerResourcePathParam/Abhi1-Khare2
 	 * 
 	 * @param firstName
 	 * @param lastName
@@ -199,7 +199,7 @@ public class CustomerResourcePathParam {
 	 * <last-name>Khare</last-name><street>ABC Drive</street><city>Sunny</city>
 	 * <state>CA</state><zip>56125</zip><country>USA</country></customer>
 	 * 
-	 * URL - http://localhost:8080/RESTFullWS/rest/CustomerResourcePathParam/1
+	 * URL - http://localhost:8080/RESTFulWS/rest/CustomerResourcePathParam/1
 	 * 
 	 * Type - application/xml
 	 * 
@@ -233,7 +233,7 @@ public class CustomerResourcePathParam {
 	 * <last-name>Khare</last-name><street>ABC Drive</street><city>Sunny</city>
 	 * <state>CA</state><zip>78957</zip><country>USA</country></customer>
 	 * 
-	 * URL - http://localhost:8080/RESTFullWS/rest/CustomerResourcePathParam/Abhishek-Khare
+	 * URL - http://localhost:8080/RESTFulWS/rest/CustomerResourcePathParam/Abhishek-Khare
 	 * 
 	 * Type - application/xml
 	 * 
