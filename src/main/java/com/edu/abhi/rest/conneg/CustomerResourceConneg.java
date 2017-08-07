@@ -34,10 +34,13 @@ public class CustomerResourceConneg {
 	 * or try
 	 * 
 	 * Accept:text/*,application/xml
+	 * Accept:text/xml will result in 406(Not Acceptable)
 	 * 
 	 * @param id
 	 * @return
 	 */
+	
+	
 	@GET
 	@Path("{id}")
 	@Produces("application/xml")
@@ -83,7 +86,7 @@ public class CustomerResourceConneg {
 	}
 
 	/**
-	 * http://localhost:8080/RESTFulWS/rest/CustomerResourceConneg
+	 * http://localhost:8080/RESTFulWS/rest/CustomerResourceConneg/test
 	 * 
 	 * Accept : application/json or try Accept : application/xml
 	 * 

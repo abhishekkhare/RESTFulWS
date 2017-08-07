@@ -15,6 +15,7 @@ import javax.ws.rs.core.Response;
 
 import com.edu.abhi.rest.dao.JDBCHandler;
 import com.edu.abhi.rest.domain.Customer;
+
 /**
  * 
  * @author abhishekkhare
@@ -28,9 +29,27 @@ public class CustomerResourceConsume {
 	/**
 	 * URL - http://localhost:8080/RESTFulWS/rest/CustomerResourceConsume
 	 * 
-	 * JSON - {"city": "Sunny","country": "USA","firstName": "Abhishek","lastName": "Khare","state": "CA","street": "ABC Drive","zip": "02115"}
+	 * JSON - {"city": "Sunny","country": "USA","firstName":
+	 * "Abhishek","lastName": "Khare","state": "CA","street": "ABC Drive","zip":
+	 * "02115"}
 	 * 
 	 * The input XML will automatically be converted into the Customer Object
+	 * 
+	 * 
+	 * If two methods have the same HTTP Method and same @Produce and @Consume
+	 * org.glassfish.jersey.internal.Errors.logErrors Following issues have been
+	 * detected: WARNING: A resource model has ambiguous (sub-)resource method
+	 * for HTTP method GET and input mime-types as defined by"@Consumes" and
+	 * "@Produces" annotations at Java methods public java.lang.String
+	 * com.edu.abhi.rest.services.CustomerResourceConsume.testServer() and
+	 * public java.lang.String
+	 * com.edu.abhi.rest.services.CustomerResourceConsume.atestServer1() at
+	 * matching regular expression /CustomerResourceConsume. These two methods
+	 * produces and consumes exactly the same mime-types and therefore their
+	 * invocation as a resource methods will always fail.
+	 * 
+	 * However if either the @Produce or @Consume is changed it works
+	 * fine. @Produce, use the "Accept" header field.
 	 * 
 	 * @param customer
 	 * @return
@@ -66,6 +85,7 @@ public class CustomerResourceConsume {
 	 * URL - http://localhost:8080/RESTFulWS/rest/CustomerResourceConsume/1
 	 * 
 	 * The input XML will automatically be converted into the Customer Object
+	 * 
 	 * @param id
 	 * @param update
 	 */
@@ -84,10 +104,22 @@ public class CustomerResourceConsume {
 		current.setZip(update.getZip());
 		current.setCountry(update.getCountry());
 	}
-	
+
 	@GET
 	@Produces(MediaType.TEXT_HTML)
 	public String testServer() {
 		return "<p>" + this.getClass().getSimpleName() + "<p>";
+	}
+
+	// @GET
+	// @Produces(MediaType.TEXT_HTML)
+	// public String atestServer1() {
+	// return "<p>" + this.getClass().getSimpleName() + " Abhishek <p>";
+	// }
+
+	@GET
+	@Produces(MediaType.TEXT_PLAIN)
+	public String atestServer1() {
+		return "<p>" + this.getClass().getSimpleName() + " Abhishek <p>";
 	}
 }
