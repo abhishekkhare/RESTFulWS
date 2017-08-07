@@ -27,7 +27,7 @@ public class CarResourceMatrixAndPathParam
     * 
     * URL - http://localhost:8080/RESTFulWS/rest/CarResourceMatrixAndPathParam/matrix/nissan/altima/2005;color=grey
     * URL - http://localhost:8080/RESTFulWS/rest/CarResourceMatrixAndPathParam/matrix/honda/accord/2012;color=grey
-    * URL - http://localhost:8080/RESTFulWS/rest/CarResourceMatrixAndPathParam/matrix/infinity/qx60/2017;color=black
+    * URL - http://localhost:8080/RESTFulWS/rest/CarResourceMatrixAndPathParam/matrix/infinity/qx60/2017;color=blue
     * 
     * @param make
     * @param car

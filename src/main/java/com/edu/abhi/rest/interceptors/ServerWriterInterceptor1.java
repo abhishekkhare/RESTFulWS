@@ -11,6 +11,7 @@ import javax.ws.rs.ext.WriterInterceptorContext;
 
 @Priority(value = 1000)
 @Provider
+@AnnotationToApplyInterceptor
 public class ServerWriterInterceptor1 implements WriterInterceptor {
 
 	@Override

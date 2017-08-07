@@ -15,6 +15,7 @@ import javax.ws.rs.core.Response;
 
 import com.edu.abhi.rest.dao.JDBCHandler;
 import com.edu.abhi.rest.domain.Customer;
+import com.edu.abhi.rest.filters.AnnotationToApplyFilter;
 
 /**
  * 
@@ -73,6 +74,7 @@ public class CustomerResourceConsume {
 	@GET
 	@Path("{id}")
 	@Produces(MediaType.APPLICATION_JSON)
+	@AnnotationToApplyFilter
 	public Customer getCustomer(@PathParam("id") int id) {
 		Customer customer = JDBCHandler.getCustomerDB().get(id);
 		if (customer == null) {

@@ -12,6 +12,7 @@ import javax.ws.rs.ext.ReaderInterceptorContext;
 
 @Priority(value = 2000)
 @Provider
+@AnnotationToApplyInterceptor
 public class ServerReaderInterceptor2 implements ReaderInterceptor {
 
 	@Override

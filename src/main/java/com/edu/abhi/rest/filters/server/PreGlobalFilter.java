@@ -7,6 +7,8 @@ import javax.ws.rs.container.ContainerRequestFilter;
 import javax.ws.rs.container.PreMatching;
 import javax.ws.rs.ext.Provider;
 
+import com.edu.abhi.rest.filters.AnnotationToApplyFilter;
+
 /**
  * 
  * @author abhishekkhare
@@ -31,6 +33,7 @@ import javax.ws.rs.ext.Provider;
  */
 @Provider
 @PreMatching
+@AnnotationToApplyFilter
 public class PreGlobalFilter implements ContainerRequestFilter {
 	@Override
 	public void filter(ContainerRequestContext request) throws IOException {

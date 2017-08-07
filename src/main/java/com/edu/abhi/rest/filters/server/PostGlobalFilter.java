@@ -6,7 +6,10 @@ import javax.ws.rs.container.ContainerRequestContext;
 import javax.ws.rs.container.ContainerRequestFilter;
 import javax.ws.rs.ext.Provider;
 
+import com.edu.abhi.rest.filters.AnnotationToApplyFilter;
+
 @Provider
+@AnnotationToApplyFilter
 public class PostGlobalFilter implements ContainerRequestFilter {
 	@Override
 	public void filter(ContainerRequestContext request) throws IOException {

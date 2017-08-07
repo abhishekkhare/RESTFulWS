@@ -7,6 +7,8 @@ import javax.ws.rs.container.ContainerResponseContext;
 import javax.ws.rs.container.ContainerResponseFilter;
 import javax.ws.rs.ext.Provider;
 
+import com.edu.abhi.rest.filters.AnnotationToApplyFilter;
+
 /**
  * 
  * @author abhishekkhare
@@ -20,6 +22,7 @@ import javax.ws.rs.ext.Provider;
  *         case the filter will be executed and will process the 404 response.
  */
 @Provider
+@AnnotationToApplyFilter
 public class GlobalResponseFilter implements ContainerResponseFilter {
 	@Override
 	public void filter(ContainerRequestContext req, ContainerResponseContext res) throws IOException {
